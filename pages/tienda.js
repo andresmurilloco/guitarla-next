@@ -8,7 +8,7 @@ export async function getStaticProps(){
   const {data: guitarras} = await respuesta.json();
 
   return {
-    props: guitarras
+    props: {guitarras}
   };
 }
 
